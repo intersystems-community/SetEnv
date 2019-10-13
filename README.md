@@ -12,4 +12,4 @@ Set Environment Variables
 
 1. Once per system start call: `write ##class(isc.SetEnv).Setup()`
 2. Call: `write ##class(isc.SetEnv).SetEnvVar(VarName, Value)` to set environment variable
-3. Use `write $system.Util.GetEnviron(VarName)` to check that variable assignment was a success. 
+3. Call: `write $system.Util.GetEnviron(VarName)` to check that variable assignment was a success. This is a required action on some platforms.
